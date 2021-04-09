@@ -1,0 +1,15 @@
+users view 
+
+
+  <div *ngIf="todoError?.message">
+    <div class="alert alert-danger" role="alert" id="ToDoError">
+      Some error occurred. Please try again
+    </div>
+  </div>
+
+<hr />
+
+<div *ngFor="let val of ToDoList" style="text-align: center;">
+  {{val.bool}}  {{val.userName}}  {{val.contact}} {{val.country}} 
+ </div>
+ 
